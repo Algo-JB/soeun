@@ -1,4 +1,4 @@
-package July14;
+package july14;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;

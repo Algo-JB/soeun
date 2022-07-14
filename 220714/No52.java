@@ -3,7 +3,7 @@ package july14;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class No51 {
+public class No52 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
@@ -17,16 +17,14 @@ public class No51 {
             int plusHour = (num2 + num3) / 60;
             int newHour = num1 + plusHour;
             int newMins = (num2 + num3) - 60 * plusHour;
-            
-            
 
             if(newHour < 23){
                 System.out.println(newHour + " " + newMins);
             }else {
-                int newHour2 = newHour - 24;
-                System.out.println(newHour2 + " " + newMins);
-            }
-            
+                while(newHour > 23) {
+                	newHour = newHour - 24;
+                }
+            }    
         } else {
             int newMins = num2 + num3 ;
             System.out.println(num1 + " " + newMins);
